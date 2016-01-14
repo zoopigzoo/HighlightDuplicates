@@ -42,9 +42,10 @@ def filter_counts(counts, treshold=1):
     lower or equal to the treshold, which defaults to 1.
     '''
     filtered = dict()
-    for k, v in counts.iteritems():
+    for k, v in counts.items():
         if len(v) > treshold:
             filtered[k] = v
+            print("Duplicate:" + k)
     return filtered
 
 
@@ -60,11 +61,14 @@ def show_lines(regions, view):
     all_regions = []
     for r in regions:
         all_regions.extend(r)
+
     color_scope_name = settings.get('highlight_duplicates_color',
                                         DEFAULT_COLOR_SCOPE_NAME)
+    
     view.add_regions('DuplicatesHighlightListener',
                         all_regions, color_scope_name,
-                        sublime.DRAW_OUTLINED)
+                        "dot",
+                        sublime.DRAW_SOLID_UNDERLINE)
 
 
 def highlight_duplicates(view):
