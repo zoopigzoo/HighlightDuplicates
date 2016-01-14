@@ -1,21 +1,21 @@
 # Highlight Duplicates
 
+Fork Notes: changes some codes for Sublime 3
+
 **Highlight duplicated lines.**
-This is a [Sublime Text 2](http://www.sublimetext.com/2) plugin.
+This is a [Sublime Text 3](http://www.sublimetext.com/3) plugin.
 
 
 ## Installation
 
-Go to your `Packages` subdirectory under ST2's data directory:
+Go to your `Packages` subdirectory under ST3's data directory:
 
-* Windows: `%APPDATA%\Sublime Text 2`
-* OS X: `~/Library/Application Support/Sublime Text 2/Packages`
-* Linux: `~/.config/sublime-text-2`
-* Portable Installation: `Sublime Text 2/Data`
+* Windows: `%APPDATA%\Sublime Text 3`
+* OS X: `~/Library/Application Support/Sublime Text 3/Packages`
+* Linux: `~/.config/sublime-text-3`
+* Portable Installation: `Sublime Text 3/Data`
 
-Then clone this repository:
-
-    git clone git://github.com/qur2/HighlightDuplicates.git
+Then clone this repository
 
 That's it!
 
